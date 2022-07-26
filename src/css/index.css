@@ -1,0 +1,439 @@
+*{
+    margin:0;
+    padding:0;
+
+}
+body{
+    background-color: #393b3e;
+}
+/* -----------Loader----------------- */
+.scanner h2 {
+    color: transparent;
+    font-size: 1.4rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.scanner h2::before {
+    content: "Loading...";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-right: 4px solid rgb(226, 106, 8);
+    overflow: hidden;
+    color: rgb(226, 106, 8);
+    animation: load91371 2s linear infinite;
+}
+
+@keyframes load91371 {
+    0%, 10%, 100% {
+    width: 0;
+    }
+    10%,20%,30%,40%,50%,60%,70%,80%,90%,100% {
+    border-right-color: transparent;
+    }
+    11%,21%,31%,41%,51%,61%,71%,81%,91% {
+    border-right-color: rgb(226, 106, 8);
+    }
+    60%, 80% {
+    width: 100%;
+    }
+}
+/* ------Header--------- */
+.navTitulo h1{
+    color:white;
+}
+.navTitulo span{
+    color:rgb(226, 106, 8);
+}
+.navbar-nav ul li{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.navbar-nav li a{
+    text-decoration: none;
+    color: rgb(193, 193, 193);
+    font-size: 24px;
+    margin-left:30px;
+
+}
+.collapse{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+}
+.contendorMenuContable{
+    margin-top:20px;
+}
+.navbar-nav li a:hover{
+    color: rgb(227, 226, 226);
+}
+.contendorMenuContable{
+    display: flex;
+}
+.contendorMenuContable span{
+    color:white;
+}
+.contendorMenuContable .contadorCantidad{
+    color:white;
+}
+
+/* --------Main de Pagina de Productos------------------ */
+.seccionProductos{
+    background-color: #393b3e;
+}
+.seccionProductosTitulo h2{
+    margin-top: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:rgb(226, 106, 8);
+    font-size: 50px;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; */
+}
+.seccionProductosTitulo hr{
+    height: 2px;
+    background-color: black;
+    border:none;
+    
+}
+.itemView{
+    width: 350px;
+    height: 470px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin-top:25px;
+    margin-left: 20px;
+    background-color: #232427;
+    box-shadow: 5px 5px 15px rgb(226, 106, 8) ;
+    transition: all .1s ease-in-out;
+}
+.itemView:hover{
+    transform: translateY(-10px);
+}
+.itemView h2{
+    color:white;
+}
+.itemView img{
+    width: 250px;
+    height: 300px;
+}
+.itemView .botonConfirmar{
+    text-decoration: none;
+    color:rgb(193, 193, 193);
+    display:flex;
+    margin-top: 35px;
+    justify-content: center;
+    background-color:rgb(226, 106, 8);
+    font-size: 30px;
+    width: 200px;
+    border-radius: 20px;
+    /* height: 30px; */
+}
+.itemView .botonConfirmar:hover{
+    background-color:rgb(228, 128, 45) ;
+}
+
+.seccionContenedorProductos{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+/* ----------------Pagina de itemDetailContainer ------------- */
+.contenedorItem .contenedorImagen img{
+    width: 300px;
+    height: 390px;
+    margin-top: 2rem;
+}
+.itemDetailContainer{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:6rem;
+}
+.contenedorImagen{
+    width: 420px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(37, 37, 37);
+    box-shadow: 5px 5px 15px rgb(226, 106, 8) ;
+}
+.contenedorItem{
+    display:flex;
+    /* flex-direction: ; */
+    /* justify-content: space-around; */
+    /* align-items: center; */
+    border-color: black;
+    border-style: none;
+    /* background-color: bisque; */
+    min-width:900px
+}
+.contenedorImagen h3{
+    color:rgb(228, 128, 45);
+}
+.cardContador{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    background-color: #393b3e;
+    height:90px;
+    width:160px;
+    border-radius: 20px;
+    margin-top:30px;
+    
+}
+.cardContador .mostrarNumero{
+    font-size: 28px;
+}
+.btnSuma{
+    align-self: center;
+}
+.btnResta{
+    align-self: center;
+}
+.mostrarNumero{
+    align-self: center;
+    color:white;
+    /* font-size: 20px; */
+}
+.contenedorDetalle p{
+    font-size: 15px;
+    color:white;
+}
+.contenedorDescripcionDetail{
+    width: 390px;
+    height: 80px;
+    overflow: visible;
+    word-wrap: break-word;
+}
+.contenedorDescripcionDetail p{
+    width: 300px;
+    font-size: 20px;
+}
+.contenedorDetalle span{
+    color:white;
+    font-size: 20px;
+    margin-top: 30px;
+}
+.contenedorCol2{
+    background-color: rgba(0, 0, 0,0.5);
+    margin-left: 2rem;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    width: 450px;
+}
+
+.contenedorDetalle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    
+}
+.btnConfirmar{
+    background-color:rgb(226, 106, 8) ;
+    font-size: 25px;
+    margin-left:11px;
+    margin-top:40px;
+}
+.btnConfirmar:hover{
+    background-color: rgb(255, 140, 46);
+}
+.contenedorDescripcionDetail{
+    margin-top:30px;
+}
+.botonPostConfirmar{
+    text-decoration: none;
+    color:rgb(193, 193, 193);
+    background-color: rgb(226, 106, 8);
+    font-size: 26px;
+    width: 300px;
+    height: 100px;
+    border-radius: 20px;
+}
+.botonPostConfirmar:hover{
+    background-color: rgb(242, 126, 30);
+    color:rgb(237, 225, 225);
+}
+
+/* -------Pagina del carrito--------------- */
+.carrito{
+    margin-top:7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.carrito h2{
+    color:rgb(226, 106, 8);
+    font-size: 50px;
+}
+.containerImgCart{
+    display: flex;
+    align-items: center;
+}
+.contenedorUnico .containerImgCart img{
+    width:100px;
+    height: 150px;
+    margin-left:6rem;
+}
+.contenedorUnico{
+    display: flex;
+    flex-direction: row;
+    box-shadow: 5px 5px 15px rgb(226, 106, 8) ;
+}
+.conainerGeneral{
+    display: flex;
+    align-items: center;
+    /* justify-content:  */
+}
+.contenedorUnico{
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    width: 90%;
+    height: 200px;
+    margin-top:2rem;
+}
+.containerNombreCart{
+    margin-left:4rem;
+    color:white;
+    font-size: 20px;
+}
+.containerPrecioCart{
+    color:white;
+    font-size: 20px;
+    margin-left:2.5rem;
+}
+.containerCatidadCart{
+    color:white;
+    font-size: 20px;
+    margin-left: 2.5rem;
+}
+.containerButtonCart{
+    margin-left: 2.5rem;
+}
+.containerPorductTotal{
+    color:white;
+    font-size: 20px;
+    margin-left:2.5rem;
+}
+.carritoItems{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top:3rem;
+    
+}
+.containerTotalPrecio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+    color:white;    
+}
+.containerTotalPrecio h3{
+    font-size: 35px;
+}
+.vaciarCarrito{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+}
+.vaciarCarrito button{
+    font-size: 25px;
+}
+.formulario{
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.formulario form{
+    display:flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    width: 40%;
+}
+.formulario input{
+    margin-top:2rem;
+    height: 40px ;
+}
+.finalizarCompra{
+    margin-top: 2rem;
+    margin-bottom:3rem;
+}
+.ContenedorVacio{
+
+    /* width: 200px; */
+    margin-top: 12rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    
+}
+.ContenedorVacio h3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    font-size: 40px;
+}
+.ContenedorVacio .botonVolver{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:rgb(193, 193, 193);
+    font-size: 23px;
+    background-color: rgb(226, 106, 8) ;
+    width: 220px;
+    height: 60px;
+    border-radius: 20px;
+    margin-top: 2rem;
+}
+.ContenedorVacio .botonVolver:hover{
+    background-color:rgb(241, 127, 34) ;
+}
+.contenedorPostvolver{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    margin-top:15rem;
+}
+.contenedorPostvolver h2{
+    color:white;
+}
+.contenedorPostvolver .botonPostVolver{
+    color:rgb(193, 193, 193);
+    font-size: 25px;
+    background-color: rgb(226, 106, 8) ;
+    width: 220px;
+    height: 60px;
+    border-radius:20px;
+    display: flex;
+    align-items: center;
+    margin-top:1rem;
+    justify-content: center;
+    text-decoration: none;
+}
+.contenedorPostvolver .botonPostVolver:hover{
+    background-color: rgb(244, 128, 33);
+}
+/* -------------------Footer------------------------ */
